@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Número aleatório</title>
+    <style>
+      button{font-size: 25px; border-width: 10px; border-color: #54F79C; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif⅘q
+      }
+      div{text-align: center; margin-top: 270px}
+    </style>
+</head>
+
+<body>
+<div><button onClick="dizer()"><strong>Clique</strong></button></div>
+<script>
+function dizer (){
+  var num = parseInt(Math.random()*20+1)
+  var num2 = parseInt(Math.random()*20+1)
+  var resp = num+num2
+ var usu = window.prompt('Quanto é '+num+' mais '+num2+'?')
+ if(usu == resp){
+   window.alert('Você acertou 😄')
+ }
+ else if(usu != resp){
+   window.alert('Você errou, era '+resp+', 😕')
+ }
+}
+</script>
+</body>
+
+</html>
